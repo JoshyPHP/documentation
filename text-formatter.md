@@ -42,4 +42,4 @@ Parsing is performed via `generate_text_for_storage()` and `message_parser::pars
 Rendering is performed via `generate_text_for_display()`.
 Unparsing is performed via `generate_text_for_edit()` and `decode_message()`.
 
-In 3.2, the text_formatter services are integrated directly into those functions to preserve backward compatibility. Functions that are expected to accept parsed text from 3.1 differentiate their input by examining its first 3 bytes. A text parsed by s9e\TextFormatter is stored in XML and will always start with a `r` or `t` element. Therefore, XML produced by s9e\TextFormatter always match the following regular expression: `'#^<[rt][ >]#'`.
+In 3.2, the text_formatter services are integrated directly into those functions to preserve backward compatibility. Functions that are expected to accept parsed text from 3.1 differentiate their input by examining its first 3 bytes. A text parsed by s9e\TextFormatter is stored in XML and will always start with a `r` or `t` element. Therefore, XML produced by s9e\TextFormatter always matches the following regular expression: `'#^<[rt][ >]#'`.
